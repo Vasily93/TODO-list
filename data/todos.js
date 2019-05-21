@@ -1,4 +1,4 @@
-cosnt todos = [
+const todos = [
     {
         task: 'Learn JavaScript',
         completed:true
