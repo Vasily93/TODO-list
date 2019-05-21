@@ -1,18 +1,12 @@
 function template(todo) {
-    //let checked = '';
+    let checked = '';
 
-    // if(task.completed) {
-    //     checked = 'checked';
-    // } 
-
-    // const task = /*html*/`
-    // <li>
-    //     <input ${checked}>
-    // </li>
-    // `;
+    if(todo.completed) {
+        checked = 'checked';
+    } 
     return /*html*/`
     <li>
-        <input type="checkbox">
+        <input type="checkbox"${checked}>
         <label class="task">${todo.task}</label>
     </li>
     `;
